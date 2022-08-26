@@ -1,0 +1,28 @@
+.filtre {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+
+	& .filtre__item + .filtre__item {
+		margin-left: 8px;
+	}
+}
+
+.button_filtre {
+	color: var(--title-text-color);
+	background-color: var(--bg-team-color);
+	@include font(16px, 500, 26px);
+	padding: 6px 22px;
+	min-width: auto;
+
+	transition: color var(--transition-duration) var(--timing-function),
+		background-color var(--transition-duration) var(--timing-function),
+		box-shadow var(--transition-duration) var(--timing-function);
+
+	&:hover,
+	&:focus {
+		color: var(--white-text-color);
+		background-color: var(--accent-text-color);
+		box-shadow: var(--secondory-card-shadow);
+	}
+}

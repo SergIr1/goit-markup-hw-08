@@ -1,0 +1,40 @@
+.logo,
+.logo-white {
+	color: var(--logo-text-color);
+	font-family: Raleway, sans-serif;
+	@include font(26px, 700, 31px);
+	letter-spacing: 0.03em;
+	text-decoration: none;
+}
+
+.logo {
+	display: block;
+
+	transition: color var(--transition-duration) var(--timing-function);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-text-color);
+	}
+}
+
+.page-header__logo {
+	padding-top: 24px;
+	padding-bottom: 25px;
+}
+
+.logo__web {
+	color: var(--accent-text-color);
+}
+
+.logo-white {
+	display: inline-block;
+	color: var(--white-text-color);
+
+	transition: color var(--transition-duration) var(--timing-function);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-text-color);
+	}
+}

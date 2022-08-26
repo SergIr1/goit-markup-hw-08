@@ -1,0 +1,40 @@
+.menu-socials,
+.menu-socials__item,
+.menu-socials__link {
+	@extend %align;
+}
+
+.team-list__menu-socials {
+	margin-top: 16px;
+}
+
+.menu-socials__link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+
+	transition: background-color var(--transition-duration) var(--timing-function);
+
+	&:hover,
+	&:focus {
+		background-color: var(--accent-text-color);
+	}
+}
+
+.menu-socials_theme-dark {
+	color: var(--social-icon);
+}
+
+.menu-socials__icon {
+	fill: currentColor;
+	transition: color var(--transition-duration) var(--timing-function);
+
+	.menu-socials__link:hover &,
+	.menu-socials__link:focus & {
+		color: var(--white-text-color);
+	}
+}
+
+.menu-socials__item + .menu-socials__item {
+	margin-left: 10px;
+}
