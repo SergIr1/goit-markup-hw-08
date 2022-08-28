@@ -1,11 +1,58 @@
-.logo,
-.logo-white {
-	color: var(--logo-text-color);
-	font-family: Raleway, sans-serif;
-	@include font(26px, 700, 31px);
-	letter-spacing: 0.03em;
-	text-decoration: none;
+@media screen and (min-width: 768px) {
+	.page-header__logo {
+		// padding-top: 26px;
+		// padding-bottom: 26px;
+		@include padding-align(26px, 26px);
+	}
+
+	.logo,
+	.logo-white {
+		color: var(--logo-text-color);
+		font-family: Raleway, sans-serif;
+		@include font(24px, 700, 28px);
+		letter-spacing: 0.03em;
+		text-decoration: none;
+	}
 }
+
+@media screen and (min-width: 1200px) {
+	.page-header__logo {
+		// padding-top: 24px;
+		// padding-bottom: 25px;
+		@include padding-align(24px, 25px);
+	}
+
+	.logo,
+	.logo-white {
+		color: var(--logo-text-color);
+		font-family: Raleway, sans-serif;
+		@include font(26px, 700, 31px);
+		letter-spacing: 0.03em;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.page-header__logo {
+		// padding-top: 16px;
+		// padding-bottom: 16px;
+		@include padding-align(16px, 16px);
+	}
+
+	.logo,
+	.logo-white {
+		color: var(--logo-text-color);
+		font-family: Raleway, sans-serif;
+		@include font(26px, 700, 31px);
+		letter-spacing: 0.03em;
+		text-decoration: none;
+	}
+}
+
+// .page-header__logo {
+// 	padding-top: 24px;
+// 	padding-bottom: 25px;
+// }
 
 .logo {
 	display: block;
@@ -18,10 +65,10 @@
 	}
 }
 
-.page-header__logo {
-	padding-top: 24px;
-	padding-bottom: 25px;
-}
+// .page-header__logo {
+// 	padding-top: 24px;
+// 	padding-bottom: 25px;
+// }
 
 .logo__web {
 	color: var(--accent-text-color);

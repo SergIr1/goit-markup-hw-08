@@ -3,3 +3,8 @@
 	font-weight: $fw;
 	line-height: calc($lh / $fs);
 }
+
+@mixin padding-align($pt, $pb) {
+	padding-top: $pt;
+	padding-bottom: $pb;
+}
