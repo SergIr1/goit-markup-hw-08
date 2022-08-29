@@ -1,28 +1,60 @@
-.filtre {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+	.filtre {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		row-gap: 15px;
 
-	& .filtre__item + .filtre__item {
-		margin-left: 8px;
+		margin-bottom: 40px;
+	}
+
+	.button_filtre {
+		color: var(--title-text-color);
+		background-color: var(--bg-team-color);
+		@include font(16px, 500, 26px);
+		padding: 6px 22px;
+		min-width: auto;
+
+		transition: color var(--transition-duration) var(--timing-function),
+			background-color var(--transition-duration) var(--timing-function),
+			box-shadow var(--transition-duration) var(--timing-function);
+
+		&:hover,
+		&:focus {
+			color: var(--white-text-color);
+			background-color: var(--accent-text-color);
+			box-shadow: var(--secondory-card-shadow);
+		}
 	}
 }
 
-.button_filtre {
-	color: var(--title-text-color);
-	background-color: var(--bg-team-color);
-	@include font(16px, 500, 26px);
-	padding: 6px 22px;
-	min-width: auto;
+@media screen and (min-width: 768px) {
+	.filtre {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 50px;
 
-	transition: color var(--transition-duration) var(--timing-function),
-		background-color var(--transition-duration) var(--timing-function),
-		box-shadow var(--transition-duration) var(--timing-function);
+		& .filtre__item + .filtre__item {
+			margin-left: 8px;
+		}
+	}
 
-	&:hover,
-	&:focus {
-		color: var(--white-text-color);
-		background-color: var(--accent-text-color);
-		box-shadow: var(--secondory-card-shadow);
+	.button_filtre {
+		color: var(--title-text-color);
+		background-color: var(--bg-team-color);
+		@include font(16px, 500, 26px);
+		padding: 6px 22px;
+		min-width: auto;
+
+		transition: color var(--transition-duration) var(--timing-function),
+			background-color var(--transition-duration) var(--timing-function),
+			box-shadow var(--transition-duration) var(--timing-function);
+
+		&:hover,
+		&:focus {
+			color: var(--white-text-color);
+			background-color: var(--accent-text-color);
+			box-shadow: var(--secondory-card-shadow);
+		}
 	}
 }

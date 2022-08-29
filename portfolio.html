@@ -23,14 +23,21 @@
             <nav class="main-nav">
                 <a href="#" class="logo page-header__logo"><span class="logo__web">Web</span>Studio</a>
                 <ul class="site-nav list">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a></li>
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студия</a>
+                    </li>
                     <li class="site-nav__item"><a href="./portfolio.html"
-                            class="site-nav__link site-nav__link_current">Портфолио</a></li>
+                            class="site-nav__link site-nav__link_current">Портфолио</a>
+                    </li>
                     <li class="site-nav__item"><a href="#" class="site-nav__link">Контакты</a></li>
                 </ul>
             </nav>
+            <button type="button" class="mobile-menu-open" data-menu-open><svg class="mobile-menu-open__icon" width="40"
+                    height="40">
+                    <use href="./images/icons.svg#burger-icon"></use>
+                </svg></button>
             <ul class="adress-nav list">
-                <li class="adress-nav__item"><a href="mailto:info@devstudio.com" class="adress-nav__link">
+                <li class="adress-nav__item adress-nav__mailto-align"><a href="mailto:info@devstudio.com"
+                        class="adress-nav__link">
                         <svg class="adress-nav__icon" width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope-hover"></use>
                         </svg>info@devstudio.com</a>
@@ -40,6 +47,31 @@
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
             </ul>
+        </div>
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container"><button class="mobile-menu__close-bth" data-menu-close>
+                    <svg class="mobile-menu__icon" width="40px" height="40px">
+                        <use href="./images/icons.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                <nav class="mobile-menu__nav">
+                    <ul class="nav-menu list">
+                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Студия</a></li>
+                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Портфолио</a></li>
+                        <li class="nav-menu__item"><a href="#" class="nav-menu__link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <ul class="adress-menu list">
+                    <li class="adress-menu__item"><a href="#" class="adress-menu__tel-link">+38 096 111 11 11</a></li>
+                    <li class="adress-menu__item"><a href="#" class="adress-menu__mail-link">info@devstudio.com</a></li>
+                </ul>
+                <ul class="social-menu list">
+                    <li class="social-menu__item"><a href="#" class="social-menu__link">Instagram</a></li>
+                    <li class="social-menu__item"><a href="#" class="social-menu__link">Twitter</a></li>
+                    <li class="social-menu__item"><a href="#" class="social-menu__link">Facebook</a></li>
+                    <li class="social-menu__item"><a href="#" class="social-menu__link">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -59,7 +91,19 @@
                 <ul class="card-set list">
                     <li class="card-set__list">
                         <a href="#" class="card-set__link">
-                            <div class="card-ovarlay"><img src="./images/img-prt.jpg" alt="Наши люди" width="370" />
+                            <div class="card-ovarlay">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/technokryak-370.jpg 1x, ./images/desktop/technokryak-370@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/technokryak-354.jpg 1x, ./images/tablet/technokryak-354@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/technocryak-450.jpg 1x, ./images/mobile/technocryak-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    <img src="./images/mobile/technocryak-450.jpg" alt="Наши люди" />
+                                </picture>
                                 <p class="card-ovarlay__text">Ресурс предлагает комплексные предложения с разным
                                     уровнем
                                     функционала и сервисов.
@@ -75,8 +119,20 @@
                     </li>
                     <li class="card-set__list">
                         <a href="#" class="card-set__link">
-                            <div class="card-ovarlay"><img src="./images/img-prt1.jpg"
-                                    alt="Постер Новый Орлеан и Золотые Звезды" width="370" />
+                            <div class="card-ovarlay">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/poster-new-orlean-370.jpg 1x, ./images/desktop/poster-new-orlean-370@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/poster-new-orlean-354.jpg 1x, ./images/tablet/poster-new-orlean-354@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/poster-new-orlean-450.jpg 1x, ./images/mobile/poster-new-orlean-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    <img src="./images/mobile/poster-new-orlean-450.jpg"
+                                        alt="Постер Новый Орлеан и Золотые Звезды" />
+                                </picture>
                                 <p class="card-ovarlay__text">Ресурс предлагает комплексные предложения с разным
                                     уровнем
                                     функционала и сервисов.
@@ -92,8 +148,19 @@
                     </li>
                     <li class="card-set__list">
                         <a href="#" class="card-set__link">
-                            <div class="card-ovarlay"><img src="./images/img-prt2.jpg" alt="Рыбный ресторан"
-                                    width="370" />
+                            <div class="card-ovarlay">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/seafood-370.jpg 1x, ./images/desktop/seafood-370@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/seafood-354.jpg 1x, ./images/tablet/seafood-354@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/seafood-450.jpg 1x, ./images/mobile/seafood-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    <img src="./images/mobile/seafood-450.jpg" alt="Рыбный ресторан" />
+                                </picture>
                                 <p class="card-ovarlay__text">Ресурс предлагает комплексные предложения с разным
                                     уровнем
                                     функционала и сервисов.
@@ -108,7 +175,19 @@
                     </li>
                     <li class="card-set__list">
                         <a href="#" class="card-set__link">
-                            <div class="card-ovarlay"><img src="./images/img-prt3.jpg" alt="наушники" width="370" />
+                            <div class="card-ovarlay">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/prime-370.jpg 1x, ./images/desktop/prime-370@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/prime-354.jpg 1x, ./images/tablet/prime-354@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/prime-450.jpg 1x, ./images/mobile/prime-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    <img src="./images/mobile/prime-450.jpg" alt="Наушники" />
+                                </picture>
                                 <p class="card-ovarlay__text">Ресурс предлагает комплексные предложения с разным
                                     уровнем
                                     функционала и сервисов.
@@ -123,8 +202,19 @@
                     </li>
                     <li class="card-set__list">
                         <a href="#" class="card-set__link">
-                            <div class="card-ovarlay"><img src="./images/img-prt4.jpg" alt="проект коробок"
-                                    width="370" />
+                            <div class="card-ovarlay">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/boxes-370.jpg 1x, ./images/desktop/boxes-370@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/boxes-354.jpg 1x, ./images/tablet/boxes-354@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/boxes-450.jpg 1x, ./images/mobile/boxes-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    <img src="./images/mobile/boxes-450.jpg" alt="проект коробок" />
+                                </picture>
                                 <p class="card-ovarlay__text">Ресурс предлагает комплексные предложения с разным
                                     уровнем
                                     функционала и сервисов.
@@ -139,7 +229,19 @@
                     </li>
                     <li class="card-set__list">
                         <a href="#" class="card-set__link">
-                            <div class="card-ovarlay"><img src="./images/img-prt5.jpg" alt="вдохновение" width="370" />
+                            <div class="card-ovarlay">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/inspiration-370.jpg 1x, ./images/desktop/inspiration-370@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/inspiration-354.jpg 1x, ./images/tablet/inspiration-354@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/inspiration-450.jpg 1x, ./images/mobile/inspiration-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    <img src="./images/mobile/inspiration-450.jpg" alt="вдохновение" />
+                                </picture>
                                 <p class="card-ovarlay__text">Ресурс предлагает комплексные предложения с разным
                                     уровнем
                                     функционала и сервисов.
@@ -154,8 +256,19 @@
                     </li>
                     <li class="card-set__list">
                         <a href="#" class="card-set__link">
-                            <div class="card-ovarlay"><img src="./images/img-prt6.jpg" alt="журнал дизайн"
-                                    width="370" />
+                            <div class="card-ovarlay">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/limited-edition-370.jpg 1x, ./images/desktop/limited-edition-370@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/limited-edition-354.jpg 1x, ./images/tablet/limited-edition-354@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/limited-edition-450.jpg 1x, ./images/mobile/limited-edition-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    <img src="./images/mobile/limited-edition-450.jpg" alt="журнал дизайн" />
+                                </picture>
                                 <p class="card-ovarlay__text">Ресурс предлагает комплексные предложения с разным
                                     уровнем
                                     функционала и сервисов.
@@ -170,8 +283,16 @@
                     </li>
                     <li class="card-set__list">
                         <a href="#" class="card-set__link">
-                            <div class="card-ovarlay"><img src="./images/img-prt7.jpg" alt="лабраторный проект"
-                                    width="370" />
+                            <div class="card-ovarlay">
+                                <picture>
+                                    <source srcset="./images/desktop/lab-370.jpg 1x, ./images/desktop/lab-370@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source srcset="./images/tablet/lab-354.jpg 1x, ./images/tablet/lab-354@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source srcset="./images/mobile/lab-450.jpg 1x, ./images/mobile/lab-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    <img src="./images/mobile/lab-450.jpg" alt="лабраторный проект" />
+                                </picture>
                                 <p class="card-ovarlay__text">Ресурс предлагает комплексные предложения с разным
                                     уровнем
                                     функционала и сервисов.
@@ -186,8 +307,19 @@
                     </li>
                     <li class="card-set__list">
                         <a href="#" class="card-set__link">
-                            <div class="card-ovarlay"><img src="./images/img-prt8.jpg" alt="растущий бизнес"
-                                    width="370" />
+                            <div class="card-ovarlay">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/growing-business-370.jpg 1x, ./images/desktop/growing-business-370@2x.jpg 2x"
+                                        media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/growing-business-354.jpg 1x, ./images/tablet/growing-business-354@2x.jpg 2x"
+                                        media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/mobile/growing-business-450.jpg 1x, ./images/mobile/growing-business-450@2x.jpg 2x"
+                                        media="(max-width: 767px)" />
+                                    <img src="./images/mobile/growing-business-450.jpg" alt="растущий бизнес" />
+                                </picture>
                                 <p class="card-ovarlay__text">Ресурс предлагает комплексные предложения с разным
                                     уровнем
                                     функционала и сервисов.
@@ -208,7 +340,7 @@
         <div class="container footer-content">
             <div class="footer-adress"><a href="#" class="logo logo-white"><span class="logo__web">Web</span>Studio</a>
                 <address class="footer-adress__nav">
-                    <ul class="list">
+                    <ul class="footer-adress__menu list">
                         <li class="footer-adress__item"><a href="https://goo.gl/maps/6XvuQQxbahTjYnd79"
                                 class="footer-adress__text">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
@@ -234,7 +366,7 @@
                             <svg class="menu-socials__icon menu-socials_icon_white" width="20" height="20">
                                 <use href="./images/icons.svg#icon-twitter1"></use>
                             </svg></a></li>
-                    <li class="menu-socials__item"><a href="https://www.facebook.com/"
+                    <li class="menu-socials__item"><a href=" https://www.facebook.com/"
                             class="menu-socials__link menu-socials_theme_white">
                             <svg class="menu-socials__icon menu-socials_icon_white" width="20" height="20">
                                 <use href="./images/icons.svg#icon-facebook1"></use>
@@ -259,6 +391,7 @@
             </form>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

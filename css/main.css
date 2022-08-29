@@ -1529,31 +1529,55 @@ img {
     margin-left: 10px;
   }
 }
-.filtre {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+@media screen and (max-width: 767px) {
+  .filtre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+  }
+  .button_filtre {
+    color: var(--title-text-color);
+    background-color: var(--bg-team-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625;
+    padding: 6px 22px;
+    min-width: auto;
+    transition: color var(--transition-duration) var(--timing-function), background-color var(--transition-duration) var(--timing-function), box-shadow var(--transition-duration) var(--timing-function);
+  }
+  .button_filtre:hover, .button_filtre:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+    box-shadow: var(--secondory-card-shadow);
+  }
 }
-.filtre .filtre__item + .filtre__item {
-  margin-left: 8px;
+@media screen and (min-width: 768px) {
+  .filtre {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .filtre .filtre__item + .filtre__item {
+    margin-left: 8px;
+  }
+  .button_filtre {
+    color: var(--title-text-color);
+    background-color: var(--bg-team-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625;
+    padding: 6px 22px;
+    min-width: auto;
+    transition: color var(--transition-duration) var(--timing-function), background-color var(--transition-duration) var(--timing-function), box-shadow var(--transition-duration) var(--timing-function);
+  }
+  .button_filtre:hover, .button_filtre:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+    box-shadow: var(--secondory-card-shadow);
+  }
 }
-
-.button_filtre {
-  color: var(--title-text-color);
-  background-color: var(--bg-team-color);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.625;
-  padding: 6px 22px;
-  min-width: auto;
-  transition: color var(--transition-duration) var(--timing-function), background-color var(--transition-duration) var(--timing-function), box-shadow var(--transition-duration) var(--timing-function);
-}
-.button_filtre:hover, .button_filtre:focus {
-  color: var(--white-text-color);
-  background-color: var(--accent-text-color);
-  box-shadow: var(--secondory-card-shadow);
-}
-
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -1572,6 +1596,8 @@ img {
 }
 
 .card-set__content {
+  width: 100%;
+  flex-grow: 1;
   background-color: var(--white-text-color);
   border-bottom: 1px solid var(--border-cards-color);
   border-right: 1px solid var(--border-cards-color);
