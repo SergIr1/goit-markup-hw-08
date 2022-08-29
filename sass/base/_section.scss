@@ -18,12 +18,10 @@
 	.section {
 		padding-top: 60px;
 		padding-bottom: 60px;
-		// margin: 0;
 	}
 
 	.section__title {
 		margin-bottom: 30px;
-		// margin: 0 auto;
 
 		color: var(--title-text-color);
 		@include font(28px, 700, 33px);
@@ -40,7 +38,6 @@
 
 	.section__title {
 		margin-bottom: 50px;
-
 		@include font(36px, 700, 42px);
 	}
 }
