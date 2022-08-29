@@ -1,7 +1,5 @@
 @media screen and (min-width: 768px) {
 	.page-header__logo {
-		// padding-top: 26px;
-		// padding-bottom: 26px;
 		@include padding-align(26px, 26px);
 	}
 
@@ -17,8 +15,6 @@
 
 @media screen and (min-width: 1200px) {
 	.page-header__logo {
-		// padding-top: 24px;
-		// padding-bottom: 25px;
 		@include padding-align(24px, 25px);
 	}
 
@@ -34,8 +30,6 @@
 
 @media screen and (max-width: 767px) {
 	.page-header__logo {
-		// padding-top: 16px;
-		// padding-bottom: 16px;
 		@include padding-align(16px, 16px);
 	}
 
@@ -49,11 +43,6 @@
 	}
 }
 
-// .page-header__logo {
-// 	padding-top: 24px;
-// 	padding-bottom: 25px;
-// }
-
 .logo {
 	display: block;
 
@@ -64,11 +53,6 @@
 		color: var(--accent-text-color);
 	}
 }
-
-// .page-header__logo {
-// 	padding-top: 24px;
-// 	padding-bottom: 25px;
-// }
 
 .logo__web {
 	color: var(--accent-text-color);

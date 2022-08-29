@@ -1,16 +1,25 @@
-.modal {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+@media screen and (max-width: 767px), screen and (min-width: 768px) {
+	.modal {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 
-	min-width: 528px;
-	min-height: 581px;
+		min-width: 450px;
+		min-height: 609px;
 
-	background-color: var(--white-text-color);
-	box-shadow: var(--border-card-shadow);
-	border-radius: 4px;
-	padding: 40px;
+		background-color: var(--white-text-color);
+		box-shadow: var(--border-card-shadow);
+		border-radius: 4px;
+		padding: 40px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.modal {
+		min-width: 528px;
+		min-height: 581px;
+	}
 }
 
 .modal-icon-close {
