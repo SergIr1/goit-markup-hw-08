@@ -1,7 +1,9 @@
 .menu-socials,
 .menu-socials__item,
 .menu-socials__link {
-	@extend %align;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .team-list__menu-socials {

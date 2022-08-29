@@ -1,7 +1,9 @@
 .menu-clients,
 .menu-clients__item,
 .menu-clients__link {
-	@extend %align;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .menu-clients__item {
