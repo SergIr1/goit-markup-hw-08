@@ -14,6 +14,7 @@
 		@include font(16px, 500, 26px);
 		padding: 6px 22px;
 		min-width: auto;
+		min-height: auto;
 
 		transition: color var(--transition-duration) var(--timing-function),
 			background-color var(--transition-duration) var(--timing-function),
@@ -32,7 +33,7 @@
 	.filtre {
 		display: flex;
 		justify-content: center;
-		margin-bottom: 50px;
+		margin-bottom: 30px;
 
 		& .filtre__item + .filtre__item {
 			margin-left: 8px;
@@ -45,6 +46,7 @@
 		@include font(16px, 500, 26px);
 		padding: 6px 22px;
 		min-width: auto;
+		min-height: auto;
 
 		transition: color var(--transition-duration) var(--timing-function),
 			background-color var(--transition-duration) var(--timing-function),

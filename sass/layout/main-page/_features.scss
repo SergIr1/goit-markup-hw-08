@@ -1,5 +1,5 @@
 @media screen and (max-width: 767px) {
-	.features-list__item {
+	.features-list__item:not(:last-child) {
 		margin-bottom: 30px;
 	}
 

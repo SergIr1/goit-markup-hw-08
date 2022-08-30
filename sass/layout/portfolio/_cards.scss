@@ -82,6 +82,12 @@
 	.card-set__content {
 		max-width: 354px;
 	}
+
+	.card-set__link {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
 }
 
 @media screen and (min-width: 1200px) {
