@@ -414,6 +414,7 @@ summary {
   display: inline-block;
   min-width: 200px;
   min-height: 50px;
+  padding: 0;
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
   cursor: pointer;
@@ -989,6 +990,9 @@ summary {
     fill: currentColor;
     margin-right: 8px;
   }
+  .page-header {
+    border-bottom: 1px solid var(--header-border-color);
+  }
 }
 @media screen and (min-width: 1200px) {
   .page-header__container,
@@ -1046,7 +1050,6 @@ summary {
     margin-right: auto;
     margin-left: auto;
     color: var(--white-text-color);
-    width: 360px;
     font-size: 26px;
     font-weight: 900;
     line-height: 1.6153846154;
@@ -1080,8 +1083,8 @@ summary {
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 360px;
     color: var(--white-text-color);
-    width: 360px;
     font-size: 26px;
     font-weight: 900;
     line-height: 1.6153846154;
@@ -1106,7 +1109,7 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.3636363636;
@@ -1477,6 +1480,8 @@ summary {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 450px;
   }
   .footer-contact-form__input {
     width: 100%;

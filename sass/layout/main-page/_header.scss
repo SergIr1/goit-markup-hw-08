@@ -254,6 +254,10 @@
 		fill: currentColor;
 		margin-right: 8px;
 	}
+
+	.page-header {
+		border-bottom: 1px solid var(--header-border-color);
+	}
 }
 
 @media screen and (min-width: 1200px) {
