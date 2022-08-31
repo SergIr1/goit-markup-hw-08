@@ -1849,6 +1849,11 @@ summary {
     box-shadow: var(--secondory-card-shadow);
   }
 }
+@media screen and (min-width: 1200px) {
+  .filtre {
+    margin-bottom: 50px;
+  }
+}
 @media screen and (min-width: 280px) {
   .card-set {
     display: flex;
