@@ -1049,6 +1049,7 @@ summary {
     margin-bottom: 30px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 360px;
     color: var(--white-text-color);
     font-family: "Roboto", sans-serif;
     font-size: 26px;
