@@ -1050,6 +1050,7 @@ summary {
     margin-right: auto;
     margin-left: auto;
     color: var(--white-text-color);
+    font-family: "Roboto", sans-serif;
     font-size: 26px;
     font-weight: 900;
     line-height: 1.6153846154;
@@ -1085,6 +1086,7 @@ summary {
     margin-left: auto;
     max-width: 360px;
     color: var(--white-text-color);
+    font-family: "Roboto", sans-serif;
     font-size: 26px;
     font-weight: 900;
     line-height: 1.6153846154;
